@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>I am Subham</title>
+    <link rel="stylesheet" href="/css/style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Fira+Sans&family=Lato:wght@300;400;700&display=swap"
+        rel="stylesheet">
+    <script src="/js/main.js"></script>
+</head>
+
+<body>
+    <header>
+        <div class="sit-main-wrapper">
+
+            <div class="container">
+                <nav id="main-nav" class="flex items-center justify-between">
+                    <div class="left flex items-center">
+                        <div class="branding">
+                            <img onclick="show()" src="/images/mylogo.png" alt="">
+                        </div>
+                        <div class="nav-menu" id="#nav-menu">
+                            <a href="#">Home</a>
+                            <a href="#about">About</a>
+                            <a href="#projects">Projects</a>
+                            <a href="#profile-card">pages</a>
+                            <a href="#">Blog</a>
+                        </div>
+                    </div>
+                    <div class="right">
+                        <button class="btn btn-primary">Contact</button>
+                    </div>
+                </nav>
+                <div class="hero flex items-center justify-between">
+                    <div class="left flex-1 flex justify-center">
+                        <img src="/images/subham.png" alt="">
+                    </div>
+                    <div class="right flex-1">
+                        <h6>Subham Patra</h6>
+                        <h1>I'm a Web Developer <span>Creator</span></h1>
+                        <p>My name is Subham Patra ,now i pursuing BTECH in Computer Scince Engineering.i started
+                            learing front end web developement.i want to be a fullstack web developer.i can help , how
+                            you can also learning this technologies from my learning path</p>
+                        <div>
+                            <button class="btn btn-secondary">Download CV</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+    </header>
+    <section class="about" id="about">
+        <div class="container flex items-center about-inner-warp ">
+            <div class="flex-1 left">
+                <img class="about-img" src="/images/img2.png" alt="">
+            </div>
+            <div class="flex-1 right">
+                <h1>About <span>Me</span></h1>
+                <h3>Hello i'm Subham Patra</h3>
+                <p>My name is Subham Patra ,now i pursuing BTECH in Computer Scince Engineering.i started
+                    learing front end web developement.i want to be a fullstack web developer.i can help , how
+                    you can also learning this technologies from my learning path.
+
+                    
+                </p>
+                <div class="social">
+                    <a href="https://www.facebook.com/gsubham.patra" target="#blank"><img src="/images/facebook.png"
+                            alt=""></a>
+                    <a href="https://www.instagram.com/g_subham_patra/" target="_blank"><img src="/images/insta.png"
+                            alt=""></a>
+                    <a href="https://twitter.com/GSubhamPatra1" target="_blank"><img src="/images/twit.png" alt=""></a>
+                    <a href="https://www.linkedin.com/in/g-subham-kumar-patra" target="_blank"><img
+                            src="/images/linkedin.png" alt=""></a>
+                    <a href="https://github.com/iamGSubham" target="_blank"><img src="/images/github.png" alt=""></a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="projects" id="projects">
+        <div class="container">
+            <h1 class="section-heading"><span>My</span>Projects</h1>
+            <p>This is my some realworld projects,it's free for everyone must check out</p>
+            <div class="card-warpper items-center">
+                <div class="card">
+                    <img src="/images/brush.svg" alt="">
+                    <h2>Tic Tac Toe Game</h2>
+                    <p>This project developed using html css and javascript</p>
+                    <a href="project.html"> <button class="btn btn-secondary">Check out</button></a>
+                </div>
+                <div class="card">
+                    <img src="/images/brush.svg" alt="">
+                    <h2>Todo list app</h2>
+                    <p>This project developed using html css and javascript</p>
+                    <a href="project.html"> <button class="btn btn-secondary">Check out</button></a>
+                </div>
+                <div class="card">
+                    <img src="/images/brush.svg" alt="">
+                    <h2>Calculater app</h2>
+                    <p>This project developed using html css and javascript</p>
+                    <a href="project.html"> <button class="btn btn-secondary">Check out</button></a>
+                </div>
+                <div class="card">
+                    <img src="/images/brush.svg" alt="">
+                    <h2>Animations</h2>
+                    <p>This project developed using html css and javascript</p>
+                    <a href="project.html"> <button class="btn btn-secondary">Check out</button></a>
+                </div>
+                <div class="card">
+                    <img src="/images/brush.svg" alt="">
+                    <h2>Timer app</h2>
+                    <p>This project developed using html css and javascript</p>
+                    <a href="project.html"> <button class="btn btn-secondary">Check out</button></a>
+                </div>
+                <div class="card">
+                    <img src="/images/brush.svg" alt="">
+                    <h2>Car Racing game</h2>
+                    <p>This project developed using html css and javascript</p>
+                    <a href="project.html"> <button class="btn btn-secondary">Check out</button></a>
+                </div>
+
+            </div>
+        </div>
+    </section>
+    <section class="contact" id="conatct">
+        <div class="container">
+            <h2>Contact Me</h2>
+            <form action="data.js" class="">
+                <label for="name">Name</label>
+                <input type="text" name="name" id="name" placeholder="Enter your Name">
+                <label for="mail">Mail Id</label>
+                <input type="email" name="" id="mail" placeholder="Enter your Email address">
+                <label for="password">Password</label>
+                <input ty="password" name="" id="password" placeholder="Enter a Password">
+                <label for="massage">Massage Me</label>
+                <textarea name="" id="massage" cols="30" rows="5  "></textarea>
+                <input type="reset" class="btn btn-primary" id="reset" value="Reset">
+                <input type="submit" class="btn btn-primary" id="submit" value="Submit">
+            </form>
+        </div>
+    </section>
+
+    <div class="infocard">
+
+        <div class=" infocard container">
+
+
+            <div class="profile-card" id="profile-card">
+                <div class="profile-photo">
+                    <img src="/images/mylogo.png" alt="">
+                </div>
+
+                <div class="social-icons flex">
+                    <a href="https://www.facebook.com/gsubham.patra" target="_blank"><img src="/images/facebook.png"
+                            alt=""></a>
+                    <a href="https://www.instagram.com/g_subham_patra/" target="_blank"><img src="/images/insta.png"
+                            alt=""></a>
+                    <a href="https://twitter.com/GSubhamPatra1" target="_blank"><img src="/images/twit.png" alt=""></a>
+                    <a href="https://www.linkedin.com/in/g-subham-kumar-patra" target="_blank"><img
+                            src="/images/linkedin.png" alt=""></a>
+                    <a href="https://github.com/iamGSubham" target="_blank"><img src="/images/github.png" alt=""></a>
+                </div>
+            </div>
+        </div>
+    </div>
+    </div>
+</body>
+
+</html>

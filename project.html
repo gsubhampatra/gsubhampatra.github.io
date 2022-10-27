@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>projects</title>
+    <script src="https://unpkg.com/@lottiefiles/lottie-player@latest/dist/lottie-player.js"></script>
+    <style>
+        * {
+            padding: 0;
+            margin: 0;
+        }
+
+        body {
+            background: #161616;
+
+        }
+
+        .container {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .first lottie-player {
+
+            width: 300px;
+        }
+
+        .sec {
+            width: 600px;
+        }
+
+        @media(max-width:1024px) {
+            .first lottie-player {
+                height: 500px;
+                width: 500px;
+            }
+        }
+
+        @media(max-width:500px) {
+            .first lottie-player {
+                height: 200px;
+            }
+
+            .sec {
+                height: 400px;
+            }
+
+            .profile-card {
+                max-width: 250px;
+
+            }
+
+
+        }
+
+        .profile-card {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            width: 400px;
+            border: 2px solid #3DCFD3;
+            margin: 3rem auto;
+            padding: 2rem;
+            background-color: var(--dark);
+        }
+
+        .profile-card .profile-photo img {
+            border-radius: 100%;
+            background: #161616;
+            height: 7rem;
+            margin-bottom: 2rem;
+        }
+
+        .profile-card:hover .profile-photo img {
+            background: #3DCFD3;
+
+        }
+
+        .profile-card:hover {
+            box-shadow: 0.7rem 0.5rem 1.5em #3DCFD3;
+
+        }
+
+        .profile-card .social-icons a {
+            border-radius: 100%;
+            margin-left: 1.5rem;
+        }
+
+        .profile-card .social-icons img {
+            height: 100%;
+            width: 100%;
+            border-radius: 100%;
+
+        }
+
+        .profile-card .social-icons img:hover {
+            box-shadow: 0.7rem 0.5rem 1.5em #3DCFD3;
+            background-color: #3dced357;
+
+        }
+
+        .flex {
+            display: flex;
+            flex-direction: row;
+        }
+
+        .btn {
+            padding: 0.8rem 3rem;
+            font-size: 1rem;
+            font-weight: 600;
+            border: 2px solid transparent;
+            outline: none;
+            cursor: pointer;
+            transition: all 0.3s ease;
+        }
+
+        .btn-secondary {
+            text-transform: uppercase;
+            background: transparent;
+            color: #3DCFD3;
+            border: 2px solid #3DCFD3;
+        }
+
+        .btn-secondary:hover {
+            background-color: #3DCFD3;
+            color: #161616;
+
+        }
+        #line{
+            color: #3DCFD3;
+            margin-top: 20px;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <div class="animation first">
+            <lottie-player src="https://assets5.lottiefiles.com/packages/lf20_6x3nzzab.json" background="transparent"
+                speed="2" loop autoplay></lottie-player>
+        </div>
+        <div class="animation">
+            <lottie-player class="sec" src="https://lottie.host/d5fcfaac-450e-4ce9-9d6c-8162f87c4bf0/AGPfBjMbwV.json"
+                background="transparent" speed="1" loop autoplay></lottie-player>
+        </div>
+        <h2 id="line">I am Working on the project</h2>
+        <div class="profile-card infocard cnt">
+            <div class="profile-photo">
+                <img src="/images/mylogo.png" alt="">
+            </div>
+
+            <div class="social-icons flex">
+                <a href="https://www.facebook.com/gsubham.patra" target="_blank"><img src="/images/facebook.png"
+                        alt=""></a>
+                <a href="https://www.instagram.com/g_subham_patra/" target="_blank"><img src="/images/insta.png"
+                        alt=""></a>
+                <a href="https://twitter.com/GSubhamPatra1" target="_blank"><img src="/images/twit.png" alt=""></a>
+                <a href="https://www.linkedin.com/in/g-subham-kumar-patra" target="_blank"><img
+                        src="/images/linkedin.png" alt=""></a>
+                <a href="https://github.com/iamGSubham" target="_blank"><img src="/images/github.png" alt=""></a>
+            </div>
+        </div>
+        <div class="homebutton">
+            <a href="index.html"> <button class="btn btn-secondary">Go to home</button></a>
+        </div>
+
+</body>
+
+</html>
